@@ -22,8 +22,9 @@ header {
     background-color: var(--secondary-color);
     position: fixed;
     padding : 0 40px;
-    width : 1700px;
+    width : 100%;
     justify-content: space-between;
+    z-index: 100;
 }
 
 nav {
