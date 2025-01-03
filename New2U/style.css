@@ -5,11 +5,11 @@
 }
 
 :root {
-    --primary-color : #F5FBEF;
-    --secondary-color : #92AD94;
-    --tertiary-color : #748B75;
-    --dark-text : #84C318;
-    --primary-text : #503D42;
+    --primary-color : #ffffff;
+    --secondary-color : #a1ffff;
+    --tertiary-color : #9b8be0;
+    --dark-text : #00ffff;
+    --primary-text : #000000;
 }
 
 .header-links {
