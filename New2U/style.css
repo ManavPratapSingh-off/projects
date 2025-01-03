@@ -12,6 +12,10 @@
     --primary-text : #000000;
 }
 
+.active-link {
+    color : red;
+}
+
 .header-links {
     list-style: none;
     width : 60%;
