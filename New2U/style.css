@@ -41,7 +41,7 @@ header {
 }
 
 nav {
-    width : 45%;
+    width : 60%;
     justify-content: space-between;
 }
 
@@ -64,6 +64,7 @@ main {
 }
 
 .news-card {
+    margin : 20px;
     width : 23%;
     height : 500px;
     box-shadow: 2px 2px 5px black;
@@ -74,11 +75,16 @@ main {
 
 .news-card:hover {
     transform: translateY(-2px);
+    cursor: pointer;
 }
 
 .news-card img {
     height: 40%;
     width : 100%;
+}
+
+.news-card .text {
+    padding : 5px;
 }
 
 

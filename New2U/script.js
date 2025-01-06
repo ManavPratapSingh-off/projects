@@ -22,7 +22,12 @@ function formTemplates (data) {
         if (!article.urlToImage) return;
         let content = template.content.cloneNode(true);
         fillData(content, article);
+        content.addEventListener('click', function () {
+            window.location.replace(article.url);
+            console.log(`${article.title} is clicked`);
+        })
         mainArea.appendChild(content);
+        
     });
 }
 
@@ -40,4 +45,15 @@ function fillData (content, article) {
 }
 
 const linksArray = document.querySelectorAll("li");
+
+linksArray.forEach(link => {
+    link.addEventListener("click", function () {
+        linksArray.forEach(array => {
+            array.classList.remove("active-link");
+        })
+        link.classList.add("active-link");
+        let str = link.innerText;
+        fetchNews(str);
+    })
+})
 

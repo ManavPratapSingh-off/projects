@@ -21,35 +21,10 @@
         </a>
         <nav class="flex">
             <ul class="header-links flex">
-                <li onclick="(e) => {
-                    linksarray.forEach(element => {
-                        element.classList.remove('active-link');
-                    });
-                    e.target.classList.add('active-link');
-                    fetchNews('International');
-                }">International</li>
-                <li onclick="(e) => {
-                    console.log('International clicked');
-                    linksarray.forEach(element => {
-                        element.classList.remove('active-link');
-                    });
-                    e.target.classList.add('active-link');
-                    fetchNews('National');
-                }">National</li>
-                <li onclick="(e) => {
-                    linksarray.forEach(element => {
-                        element.classList.remove('active-link');
-                    });
-                    e.target.classList.add('active-link');
-                    fetchNews('Business');
-                }">Business</li>
-                <li onclick="(e) => {
-                    linksarray.forEach(element => {
-                        element.classList.remove('active-link');
-                    });
-                    e.target.classList.add('active-link');
-                    fetchNews('Sports');
-                }">Sports</li>
+                <li >International</li>
+                <li >National</li>
+                <li >Business</li>
+                <li >Sports</li>
             </ul>
 
             <div class="search-section flex">
@@ -68,9 +43,9 @@
     <template id="template">
         <div class="news-card" >
             <img src="https://via.placeholder.com/120x70" alt="news image" id="news-card-img">
-            <h4 class="news-title" style="font-weight: 300;" id="news-card-title">this is title</h4>
-            <h4 class="news-src" style="font-weight: 100;" id="news-card-src">source</h4>
-            <p style="font-weight: 200;" id="news-card-news">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam temporibus possimus aut inventore in aliquid, vel voluptatibus harum, magnam quis minima odio sequi assumenda ipsum exercitationem explicabo. Adipisci, facilis voluptatum.</p>
+            <h4 class="news-title text" style="font-weight: 300;" id="news-card-title">this is title</h4>
+            <h4 class="news-src text" style="font-weight: 100;" id="news-card-src">source</h4>
+            <p class="text" style="font-weight: 200;" id="news-card-news">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam temporibus possimus aut inventore in aliquid, vel voluptatibus harum, magnam quis minima odio sequi assumenda ipsum exercitationem explicabo. Adipisci, facilis voluptatum.</p>
         </div>
     </template>
     
